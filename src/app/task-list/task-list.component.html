@@ -1,0 +1,3 @@
+<div *ngFor="let task of tasks; let i = index">
+  <app-task [task]="task" (removeTask)="removeTask(i)"></app-task>
+</div>
